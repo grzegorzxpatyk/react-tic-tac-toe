@@ -3,9 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 class Square extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
+  
   render() {
     return (
-      <button className="square">
+      <button className="square" onClick={() => console.log(`click square no. ${this.props.value}`)}>
         {this.props.value}
       </button>
     );
