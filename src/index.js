@@ -117,9 +117,10 @@ class Game extends React.Component {
                 // sequential number of the move as a key
                 <li key={move}>
                     <button onClick={() => this.jumpTo(move)}>
-                        {this.state.stepNumber === move ? <strong>{desc}</strong> : desc}
+                        {this.state.stepNumber === move ? <strong>{desc}</strong> : desc} 
                     </button>
                 </li>
+                // if-else statements doesn't work inside JSX, but ternary operator do
             );
         });
 
