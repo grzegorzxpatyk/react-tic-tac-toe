@@ -28,7 +28,7 @@ class Board extends React.Component {
     }
 
         
-    renderRow(i) {
+    renderRow(i) { // i - index of the square to be rendered currently
         let squares = []; // start out with an empty array that in the end will be returned
         for (let j = i; j < i + 3; j++) { // 3 squares in 1 row
             squares.push(this.renderSquare(j));
@@ -36,7 +36,7 @@ class Board extends React.Component {
         return squares;
     }
 
-    renderRows(n) {
+    renderRows(n) { // n - number of rows you would like to render
         let rows = [];
         for (let k = 0; k < 3 * n; k+=3) { // 3 rows, 3 squares each
             rows.push(<div className="board-row" key={'row #' + k}>{this.renderRow(k)}</div>);
