@@ -109,7 +109,9 @@ class Game extends React.Component {
                         )}
                     </button>
                 </li>
-                // if-else statements doesn't work inside JSX, but ternary operator do
+                // regular if-else statements doesn't work inside JSX, but ternary operator do,
+                // also you can nest the jsx inside of an if-else expression, or use && operator.
+                // && evaluates only when the condition evaluates to true. {x && y} will render y only when x is true
             );
         });
 
@@ -131,7 +133,7 @@ class Game extends React.Component {
                 </div>
                 <div className="game-info">
                     <div>{status}</div>
-                    <ol>{moves}</ol>
+                    <ul>{moves}</ul>
                 </div>
             </div>
         );
