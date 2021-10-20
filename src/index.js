@@ -1,53 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Board from './board';
 import './index.css';
-
-function Square(props) {
-    return (
-        <button
-            className={
-                'square ' + (props.isWinningSquare ? 'square-winning' : null)
-            }
-            onClick={props.onClick}
-        >
-            {props.value}
-        </button>
-    );
-}
-
-class Board extends React.Component {
-    renderSquare(i) {
-        return (
-            <Square
-                isWinningSquare={this.props.winningSquares.includes(i)}
-                value={this.props.squares[i]}
-                onClick={() => this.props.onClick(i)}
-            />
-        );
-    }
-
-    render() {
-        return (
-            <div>
-                <div className="board-row">
-                    {this.renderSquare(0)}
-                    {this.renderSquare(1)}
-                    {this.renderSquare(2)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(3)}
-                    {this.renderSquare(4)}
-                    {this.renderSquare(5)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(6)}
-                    {this.renderSquare(7)}
-                    {this.renderSquare(8)}
-                </div>
-            </div>
-        );
-    }
-}
 
 class Game extends React.Component {
     constructor(props) {
@@ -155,7 +109,9 @@ class Game extends React.Component {
                         )}
                     </button>
                 </li>
-                // if-else statements doesn't work inside JSX, but ternary operator do
+                // regular if-else statements doesn't work inside JSX, but ternary operator do,
+                // also you can nest the jsx inside of an if-else expression, or use && operator.
+                // && evaluates only when the condition evaluates to true. {x && y} will render y only when x is true
             );
         });
 
@@ -177,7 +133,7 @@ class Game extends React.Component {
                 </div>
                 <div className="game-info">
                     <div>{status}</div>
-                    <ol>{moves}</ol>
+                    <ul>{moves}</ul>
                 </div>
             </div>
         );

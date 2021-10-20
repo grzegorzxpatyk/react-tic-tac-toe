@@ -2,18 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
 body {
-    font-family: 'Quicksand', sans-serif;
     margin: 0;
+    font-family: 'Quicksand', sans-serif;
     font-size: 2rem;
+    color: #89929b;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
+    background: #181818;
   }
   
   .board-row:after {
@@ -27,13 +25,14 @@ body {
   }
   
   .square {
-    background: #fff;
-    border: 1px solid #999;
+    background: #21262d;
+    border: 1px solid #161b22;
     float: left;
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 3rem;
     font-weight: bold;
     line-height: 34px;
+    color: #0a0a0a;
     height: 60px;
     width: 60px;
     margin-right: -1px;
@@ -41,6 +40,10 @@ body {
     padding: 0;
     text-align: center;
     transition: all .15s ease-in-out;
+  }
+
+  .square:hover {
+    background: #2c323b;
   }
   
   .square-winning {
@@ -69,27 +72,63 @@ body {
   }
   
   .game {
+    padding: 2rem;
     width: 60vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    min-width: fit-content; 
+    height: 70vh;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgb(10, 10, 10);
+  }
+
+  @media screen and (max-width: 900px) {
+    html {
+      font-size: 80%;
+    }
+
+    body {
+      height: max-content;
+      min-height: 100vh;
+      padding: 1rem 0;
+    }
+
+    .game {
+      flex-direction: column;
+      height: auto;
+      width: auto;
+    }
   }
 
   .game-board {
-    width: 300px;
+    width: 9.375em;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .game-info {
-    width: 300px;
+    width: 9.375em;
+    min-width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  
+  .game-info ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
 
-  .game-info ol li {
+  .game-info ul li {
     margin: .5rem auto;
   }
 
@@ -97,11 +136,13 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
+    color: #89929b;
     border-radius: 1.1rem;
     border: 0;
     padding: .6rem;
     margin: auto;
     text-align: center;
-    width: 300px;
+    width: 18rem;
+    background: #21262d;
   }
   
