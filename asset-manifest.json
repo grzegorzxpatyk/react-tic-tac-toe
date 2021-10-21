@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-tic-tac-toe/static/css/main.5d3764c5.chunk.css",
+    "main.css": "/react-tic-tac-toe/static/css/main.7a509eaa.chunk.css",
     "main.js": "/react-tic-tac-toe/static/js/main.fda610f2.chunk.js",
     "main.js.map": "/react-tic-tac-toe/static/js/main.fda610f2.chunk.js.map",
     "runtime-main.js": "/react-tic-tac-toe/static/js/runtime-main.fcb2fdcc.js",
@@ -8,13 +8,13 @@
     "static/js/2.7adca67b.chunk.js": "/react-tic-tac-toe/static/js/2.7adca67b.chunk.js",
     "static/js/2.7adca67b.chunk.js.map": "/react-tic-tac-toe/static/js/2.7adca67b.chunk.js.map",
     "index.html": "/react-tic-tac-toe/index.html",
-    "static/css/main.5d3764c5.chunk.css.map": "/react-tic-tac-toe/static/css/main.5d3764c5.chunk.css.map",
+    "static/css/main.7a509eaa.chunk.css.map": "/react-tic-tac-toe/static/css/main.7a509eaa.chunk.css.map",
     "static/js/2.7adca67b.chunk.js.LICENSE.txt": "/react-tic-tac-toe/static/js/2.7adca67b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fcb2fdcc.js",
     "static/js/2.7adca67b.chunk.js",
-    "static/css/main.5d3764c5.chunk.css",
+    "static/css/main.7a509eaa.chunk.css",
     "static/js/main.fda610f2.chunk.js"
   ]
 }
