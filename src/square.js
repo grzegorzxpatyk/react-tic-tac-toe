@@ -4,7 +4,7 @@ export default function Square(props) {
     return (
         <button
             className={
-                'square ' + (props.isWinningSquare ? 'square-winning' : null)
+                'square' + (props.isWinningSquare ? ' square-winning' : '')
             }
             onClick={props.onClick}
         >
