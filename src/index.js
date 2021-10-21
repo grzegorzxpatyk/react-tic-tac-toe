@@ -99,7 +99,7 @@ class Game extends React.Component {
                 (col: ${col()}, row: ${row()})`
                 : `Go to game start`;
             return (
-                // sequential number of the move as a key
+                // sequential number of the move as a key - key should be unique, like id attribute
                 <li key={move}>
                     <button onClick={() => this.jumpTo(move)}>
                         {this.state.stepNumber === move ? (
