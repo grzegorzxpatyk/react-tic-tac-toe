@@ -106,14 +106,14 @@ body {
   }
 
   .game-board {
-    width: 9.375em;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .game-info {
-    width: 9.375em;
+    width: fit-content;
     min-width: fit-content;
     display: flex;
     flex-direction: column;
