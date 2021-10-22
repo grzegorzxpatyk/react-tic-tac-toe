@@ -135,6 +135,25 @@ li button {
     background: #21262d;
 }
 
+.winner {
+    transition: .3s all ease;
+    color: rgb(101, 167, 101);
+    animation: blink 1s ease-in-out .5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 @media screen and (max-width: 900px) {
     html {
         font-size: 80%;

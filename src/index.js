@@ -133,7 +133,7 @@ class Game extends React.Component {
                 </div>
                 <div className="game-info">
                     <h1>tic-tac-toe</h1>
-                    <div>{status}</div>
+                    <div className={winner && 'winner'}>{status}</div>
                     <ul>{moves}</ul>
                 </div>
             </div>
