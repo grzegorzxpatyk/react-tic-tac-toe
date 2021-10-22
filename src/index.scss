@@ -58,6 +58,10 @@ h1 {
     transform: scale(1.1) rotate(360deg);
 }
 
+.square-winning:hover {
+    background-color: rgb(101, 167, 101);
+}
+
 .square-winning:nth-of-type(1) {
     transition-delay: 0;
 }
