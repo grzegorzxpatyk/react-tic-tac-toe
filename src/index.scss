@@ -18,7 +18,7 @@ body {
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 4rem;
-    color: #89929b;
+    color: #89929b; 
 }
 
 .board-row:after {
@@ -136,21 +136,21 @@ h1 {
 }
 
 .winner {
-    transition: .3s all ease;
+    transition: 0.3s all ease;
     color: rgb(101, 167, 101);
-    animation: blink 1s ease-in-out .5s;
+    animation: blink 1s ease-in-out 0.5s;
     animation-iteration-count: 3;
 }
 
 @keyframes blink {
     0% {
-        opacity: 100%;
+        opacity: 1;
     }
     50% {
-        opacity: 0%;
+        opacity: 0;
     }
     100% {
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
