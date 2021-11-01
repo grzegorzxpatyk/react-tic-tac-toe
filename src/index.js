@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Board from './board';
+import Title from './title';
 import './index.scss';
 
 class Game extends React.Component {
@@ -132,7 +133,7 @@ class Game extends React.Component {
                     />
                 </div>
                 <div className="game-info">
-                    <h1>tic-tac-toe</h1>
+                    <Title title="tic-tac-toe" />
                     <div className={winner && 'winner'}>{status}</div>
                     <ul>{moves}</ul>
                 </div>
