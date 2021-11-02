@@ -110,7 +110,7 @@ class Game extends React.Component {
                         )}
                     </button>
                 </li>
-                // regular if-else statements doesn't work inside JSX, but ternary operator do,
+                // regular if-else statements doesn't work inside return statement of .render() method, but ternary operator do,
                 // also you can nest the jsx inside of an if-else expression, or use && operator.
                 // && evaluates only when the condition evaluates to true. {x && y} will render y only when x is true
             );
